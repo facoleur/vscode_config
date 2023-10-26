@@ -1,0 +1,7 @@
+{
+	"window.zoomLevel": 1,
+	"files.trimTrailingWhitespace": true,
+	"files.insertFinalNewline": true,
+	"editor.renderWhitespace": "all",
+	"C_Cpp.default.compilerPath": "/usr/bin/gcc"
+}
