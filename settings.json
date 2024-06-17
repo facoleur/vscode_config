@@ -1,8 +1,106 @@
 {
-	"window.zoomLevel": 1,
+    "markdown.extension.toc.orderedList": true,
+    "markdown.extension.toc.levels": "2..6",
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "git.autofetch": true,
+    "editor.accessibilitySupport": "off",
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "right"
+    },
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.insertSpaces": false,
+    "workbench.settings.applyToAllProfiles": [
+        "editor.insertSpaces"
+    ],
 	"files.trimTrailingWhitespace": true,
 	"files.insertFinalNewline": true,
-	"editor.renderWhitespace": "all",
-    "C_Cpp.default.compilerPath": "/usr/bin/gcc",
-    "files.autoSave": "afterDelay"
+	"debug.onTaskErrors": "debugAnyway",
+	"42header.username": "lferro",
+	"42header.email": "lferro@student.42lausanne.ch",
+    "editor.unicodeHighlight.invisibleCharacters": false,
+	"terminal.integrated.inheritEnv": false,
+    "terminal.integrated.shellIntegration.decorationsEnabled": "overviewRuler",
+    "extensions.ignoreRecommendations": true,
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+    "editor.codeActionsOnSave": {},
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": true,
+        "scminput": false,
+        "html": true,
+        "css": true,
+        "c": true,
+        "python": "true"
+    },
+    "notebook.lineNumbers": "on",
+    "editor.lineNumbers": "relative",
+    "workbench.startupEditor": "none",
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.fontLigatures": true,
+    "editor.minimap.maxColumn": 80,
+    "editor.minimap.scale": 2,
+    "editor.minimap.showSlider": "always",
+    "editor.minimap.enabled": false,
+    "editor.mouseWheelZoom": false,
+    "terminal.integrated.scrollback": 50000,
+    "github.copilot.advanced": {
+
+    },
+    "terminal.integrated.gpuAcceleration": "off",
+    "notebook.consolidatedRunButton": true,
+    "notebook.dragAndDropEnabled": false,
+    "notebook.globalToolbarShowLabel": "never",
+    "files.autoSave": "afterDelay",
+    "accessibility.signals.lineHasError": {
+        "sound": "off"
+    },
+    "accessibility.signals.lineHasFoldedArea": {
+        "sound": "off"
+    },
+    "accessibility.signals.lineHasBreakpoint": {
+        "sound": "off"
+    },
+    "accessibility.signals.lineHasInlineSuggestion": {
+        "sound": "off"
+    },
+    "accessibility.signals.terminalQuickFix": {
+        "sound": "off"
+    },
+    "accessibility.signals.onDebugBreak": {
+        "sound": "off"
+    },
+    "accessibility.signals.noInlayHints": {
+        "sound": "off"
+    },
+    "accessibility.signals.taskCompleted": {
+        "sound": "off"
+    },
+    "accessibility.signals.taskFailed": {
+        "sound": "off"
+    },
+    "accessibility.signals.terminalCommandFailed": {
+        "sound": "off"
+    },
+    "accessibility.signals.notebookCellCompleted": {
+        "sound": "off"
+    },
+    "accessibility.signals.notebookCellFailed": {
+        "sound": "off"
+    },
+    "accessibility.signals.diffLineInserted": {
+        "sound": "off"
+    },
+    "accessibility.signals.diffLineModified": {
+        "sound": "off"
+    },
+    "accessibility.signals.progress": {
+        "sound": "off"
+    },
+    "github.copilot.editor.enableAutoCompletions": true,
+    "tailwind-fold.autoFold": false,
 }
