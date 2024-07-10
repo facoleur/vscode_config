@@ -1,93 +1,101 @@
 // Place your key bindings in this file to override the defaultsauto[]
 [
-	{
-		"key": "ctrl+tab",
-		"command": "workbench.action.nextEditor"
-	},
-	{
-		"key": "ctrl+shift+tab",
-		"command": "workbench.action.previousEditor"
-	},
+  {
+    "key": "ctrl+tab",
+    "command": "workbench.action.nextEditor"
+  },
+  {
+    "key": "ctrl+shift+tab",
+    "command": "workbench.action.previousEditor"
+  },
 
-	{
-		"key": "ctrl+tab",
-		"command": "workbench.action.terminal.focusNext",
-		"when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
-	},
-	{
-		"key": "ctrl+shift+tab",
-		"command": "workbench.action.terminal.focusPrevious",
-		"when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
-	},
-	{
-		"key": "ctrl+alt+`",
-		"command": "workbench.action.toggleMaximizedPanel"
-	},
-	{
-		"key": "ctrl+alt+n",
-		"command": "explorer.newFolder",
-		"when": "filesExplorerFocus"
-	},
-	{
-		"key": "ctrl+n",
-		"command": "explorer.newFile"
-	},
-	{
-		"key": "ctrl+n",
-		"command": "-workbench.action.files.newUntitledFile"
-	},
-	{
-		"key": "ctrl+alt+x",
-		"command": "github.copilot.toggleCopilot"
-	},
-	{
-		"key": "ctrl+=",
-		"command": "workbench.action.navigateForward",
-		"when": "canNavigateForward"
-	},
-	{
-		"key": "ctrl+shift+-",
-		"command": "-workbench.action.navigateForward",
-		"when": "canNavigateForward"
-	},
-	{
-		"key": "ctrl+shift+=",
-		"command": "-workbench.action.zoomIn"
-	},
-	{
-		"key": "ctrl+shift+=",
-		"command": "workbench.action.zoomIn"
-	},
-	{
-		"key": "ctrl+=",
-		"command": "-workbench.action.zoomIn"
-	},
-	{
-		"key": "ctrl+shift+-",
-		"command": "workbench.action.zoomOut"
-	},
-	{
-		"key": "ctrl+-",
-		"command": "-workbench.action.zoomOut"
-	},
-	{
-		"key": "ctrl+-",
-		"command": "workbench.action.navigateBack",
-		"when": "canNavigateBack"
-	},
-	{
-		"key": "ctrl+alt+-",
-		"command": "-workbench.action.navigateBack",
-		"when": "canNavigateBack"
-	},
-	{
-		"key": "ctrl+down",
-		"command": "explorer.openAndPassFocus",
-		"when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsFolder && !inputFocus"
-	},
-	{
-		"key": "enter",
-		"command": "-explorer.openAndPassFocus",
-		"when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsFolder && !inputFocus"
-	}
+  {
+    "key": "ctrl+tab",
+    "command": "workbench.action.terminal.focusNext",
+    "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+  },
+  {
+    "key": "ctrl+shift+tab",
+    "command": "workbench.action.terminal.focusPrevious",
+    "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+  },
+  {
+    "key": "ctrl+alt+`",
+    "command": "workbench.action.toggleMaximizedPanel"
+  },
+  {
+    "key": "ctrl+alt+n",
+    "command": "explorer.newFolder",
+    "when": "filesExplorerFocus"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "explorer.newFile"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "-workbench.action.files.newUntitledFile"
+  },
+  {
+    "key": "ctrl+alt+x",
+    "command": "github.copilot.toggleCopilot"
+  },
+  {
+    "key": "ctrl+=",
+    "command": "workbench.action.navigateForward",
+    "when": "canNavigateForward"
+  },
+  {
+    "key": "ctrl+shift+-",
+    "command": "-workbench.action.navigateForward",
+    "when": "canNavigateForward"
+  },
+  {
+    "key": "ctrl+shift+=",
+    "command": "-workbench.action.zoomIn"
+  },
+  {
+    "key": "ctrl+shift+=",
+    "command": "workbench.action.zoomIn"
+  },
+  {
+    "key": "ctrl+=",
+    "command": "-workbench.action.zoomIn"
+  },
+  {
+    "key": "ctrl+shift+-",
+    "command": "workbench.action.zoomOut"
+  },
+  {
+    "key": "ctrl+-",
+    "command": "-workbench.action.zoomOut"
+  },
+  {
+    "key": "ctrl+-",
+    "command": "workbench.action.navigateBack",
+    "when": "canNavigateBack"
+  },
+  {
+    "key": "ctrl+alt+-",
+    "command": "-workbench.action.navigateBack",
+    "when": "canNavigateBack"
+  },
+  {
+    "key": "ctrl+down",
+    "command": "explorer.openAndPassFocus",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsFolder && !inputFocus"
+  },
+  {
+    "key": "enter",
+    "command": "-explorer.openAndPassFocus",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsFolder && !inputFocus"
+  },
+  {
+    "key": "ctrl+shift+i",
+    "command": "editor.action.sourceAction",
+    "args": {
+      "kind": "source.addMissingImports",
+      "apply": "first"
+    }
+  }
 ]
