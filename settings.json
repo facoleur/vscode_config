@@ -40,7 +40,6 @@
     "python": "true"
   },
   "notebook.lineNumbers": "on",
-  "editor.lineNumbers": "relative",
   "workbench.startupEditor": "none",
   "editor.fontFamily": "JetBrains Mono",
   "editor.fontLigatures": true,
@@ -101,8 +100,11 @@
   "accessibility.signals.progress": {
     "sound": "off"
   },
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
   "github.copilot.editor.enableAutoCompletions": true,
-  "tailwind-fold.autoFold": false,
+  "tailwind-fold.autoFold": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "window.zoomLevel": 1.75,
@@ -110,5 +112,6 @@
   "workbench.editor.limit.enabled": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "workbench.iconTheme": "material-icon-theme"
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.lineNumbers": "relative"
 }
