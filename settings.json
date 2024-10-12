@@ -26,7 +26,7 @@
   },
   "editor.codeActionsOnSave": {
     "source.fixAll": "explicit",
-    "source.organizeImports": "never"
+    "source.organizeImports": "always"
   },
   "editor.cursorSurroundingLines": 100,
   "github.copilot.enable": {
@@ -37,12 +37,12 @@
     "html": true,
     "css": true,
     "c": true,
-    "python": "true"
+    "python": true
   },
   "notebook.lineNumbers": "on",
   "workbench.startupEditor": "none",
   "editor.fontFamily": "JetBrains Mono",
-  "editor.fontLigatures": true,
+  "editor.fontLigatures": false,
   "editor.minimap.maxColumn": 80,
   "editor.minimap.scale": 2,
   "editor.minimap.showSlider": "always",
@@ -104,14 +104,29 @@
     "editor.defaultFormatter": "Prisma.prisma"
   },
   "github.copilot.editor.enableAutoCompletions": true,
-  "tailwind-fold.autoFold": true,
+  "tailwind-fold.autoFold": false,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
-  "window.zoomLevel": 1.75,
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true
+  },
+  "editor.formatOnSave": false,
+  "window.zoomLevel": 1.5,
   "workbench.editor.limit.value": 6,
   "workbench.editor.limit.enabled": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "workbench.iconTheme": "material-icon-theme",
-  "editor.lineNumbers": "relative"
+  "window.customTitleBarVisibility": "never",
+  "workbench.activityBar.location": "top",
+  "window.commandCenter": false,
+  "workbench.layoutControl.enabled": false,
+  "workbench.editor.editorActionsLocation": "hidden",
+  "editor.suggest.showStatusBar": true,
+  "workbench.statusBar.visible": false,
+  "window.density.editorTabHeight": "compact",
+  "breadcrumbs.filePath": "off",
+  "editor.lineNumbers": "interval",
+  "scm.diffDecorationsGutterAction": "none",
+  "breadcrumbs.enabled": false
 }
