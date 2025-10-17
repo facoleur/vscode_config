@@ -1,4 +1,6 @@
 {
+  "C_Cpp.default.compilerPath": "/usr/bin/g++",
+  "remote.SSH.useLocalServer": false,
   "markdown.extension.toc.orderedList": true,
   "markdown.extension.toc.levels": "2..6",
   "explorer.confirmDragAndDrop": false,
@@ -11,8 +13,32 @@
   },
   "security.workspace.trust.untrustedFiles": "open",
   "editor.insertSpaces": false,
-  "workbench.settings.applyToAllProfiles": ["editor.insertSpaces"],
   "files.trimTrailingWhitespace": true,
+  "[markdown]": {
+    "editor.formatOnSave": false,
+    "files.trimTrailingWhitespace": false,
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    }
+  },
+  "[python]": {
+    "editor.formatOnSave": true,
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.rulers": [79],
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "always"
+    },
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "editor.formatOnSave": true,
+
   "files.insertFinalNewline": true,
   "debug.onTaskErrors": "debugAnyway",
   "42header.username": "lferro",
@@ -21,22 +47,23 @@
   "terminal.integrated.inheritEnv": false,
   "terminal.integrated.shellIntegration.decorationsEnabled": "overviewRuler",
   "extensions.ignoreRecommendations": true,
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "editor.codeActionsOnSave": {
     "source.fixAll": "explicit",
-    "source.organizeImports": "always"
+    "source.organizeImports": "explicit",
+    "source.fixAll.eslint": "always"
   },
   "editor.cursorSurroundingLines": 100,
+  "editor.cursorWidth": 3,
+  "editor.cursorStyle": "line",
   "github.copilot.enable": {
     "*": true,
-    "plaintext": false,
+    "plaintext": true,
     "markdown": true,
     "scminput": false,
     "html": true,
     "css": true,
-    "c": true,
+    "c": false,
+    "cpp": false,
     "python": true
   },
   "notebook.lineNumbers": "on",
@@ -100,25 +127,25 @@
   "accessibility.signals.progress": {
     "sound": "off"
   },
-  "[prisma]": {
-    "editor.defaultFormatter": "Prisma.prisma"
-  },
-  "github.copilot.editor.enableAutoCompletions": true,
-  "tailwind-fold.autoFold": false,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "[python]": {
-    "editor.defaultFormatter": "ms-python.black-formatter",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   },
-  "editor.formatOnSave": false,
-  "window.zoomLevel": 1.5,
-  "workbench.editor.limit.value": 6,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "workbench.colorCustomizations": {
+    "editor.lineHighlightBackground": "#232c2e",
+    "editor.lineHighlightBorder": "#232c2e"
+  },
+  "tailwind-fold.autoFold": false,
+  "tailwind-fold.foldStyle": "QUOTES",
+  "window.zoomLevel": 2.25,
+  "workbench.editor.limit.value": 10,
+  "workbench.editor.limit.perEditorGroup": true,
   "workbench.editor.limit.enabled": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "workbench.iconTheme": "material-icon-theme",
-  "window.customTitleBarVisibility": "never",
-  "workbench.activityBar.location": "top",
+  "workbench.activityBar.location": "hidden",
   "window.commandCenter": false,
   "workbench.layoutControl.enabled": false,
   "workbench.editor.editorActionsLocation": "hidden",
@@ -128,5 +155,54 @@
   "breadcrumbs.filePath": "off",
   "editor.lineNumbers": "interval",
   "scm.diffDecorationsGutterAction": "none",
-  "breadcrumbs.enabled": false
+  "eslint.codeActionsOnSave.rules": null,
+  "eslint.format.enable": true,
+  "editor.tabSize": 2,
+  "breadcrumbs.enabled": false,
+  "git.openRepositoryInParentFolders": "always",
+  "editor.wordWrapColumn": 120,
+  "editor.wordWrap": "bounded",
+  "javascript.preferences.importModuleSpecifier": "non-relative",
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "typescript.preferences.importModuleSpecifierEnding": "minimal",
+  "javascript.preferences.importModuleSpecifierEnding": "minimal",
+  "javascript.experimental.updateImportsOnPaste": true,
+  "[yaml]": {
+    "editor.formatOnSave": false
+  },
+  "[c]": {
+    "editor.defaultFormatter": "xaver.clang-format"
+  },
+  "[cpp]": {
+    "editor.defaultFormatter": "xaver.clang-format",
+    "editor.formatOnSave": true
+  },
+  "C_Cpp.clang_format_style": "file",
+  "C_Cpp.clang_format_fallbackStyle": "none",
+
+  "window.customTitleBarVisibility": "windowed",
+  "python.formatting.provider": "black",
+  "github.copilot.selectedCompletionModel": "gpt-4o-copilot",
+  "explorer.confirmPasteNative": false,
+  "python.createEnvironment.trigger": "off",
+  "workbench.editor.empty.hint": "hidden",
+  // "github.copilot.editor.enableAutoCompletions": false
+  "emeraldwalk.runonsave": {
+    "commands": [
+      {
+        "match": ".*\\.(cpp|hpp|tpp)$",
+        "cmd": "node /home/larbitrator/Documents/42/cpp05/sc.js ${file}"
+      }
+    ]
+  },
+  "editor.codeLens": false,
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "gitlens.views.fileHistory.mode": "contributors",
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+  "telemetry.telemetryLevel": "off",
+  "update.mode": "manual",
+  "extensions.autoUpdate": false,
+  "typescript.tsserver.maxTsServerMemory": 6144
 }
