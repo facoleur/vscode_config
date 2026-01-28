@@ -31,14 +31,12 @@
     "editor.formatOnSave": true,
     "editor.tabSize": 4,
     "editor.insertSpaces": true,
-    "editor.rulers": [79],
     "editor.codeActionsOnSave": {
       "source.organizeImports": "always"
     },
     "editor.defaultFormatter": "ms-python.black-formatter"
   },
   "editor.formatOnSave": true,
-
   "files.insertFinalNewline": true,
   "debug.onTaskErrors": "debugAnyway",
   "42header.username": "lferro",
@@ -68,7 +66,7 @@
   },
   "notebook.lineNumbers": "on",
   "workbench.startupEditor": "none",
-  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontFamily": "JetBrainsMono Nerd Font",
   "editor.fontLigatures": false,
   "editor.minimap.maxColumn": 80,
   "editor.minimap.scale": 2,
@@ -138,16 +136,14 @@
   },
   "tailwind-fold.autoFold": false,
   "tailwind-fold.foldStyle": "QUOTES",
-  "window.zoomLevel": 2.25,
+  "window.zoomLevel": 2,
   "workbench.editor.limit.value": 10,
   "workbench.editor.limit.perEditorGroup": true,
   "workbench.editor.limit.enabled": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.activityBar.location": "hidden",
   "window.commandCenter": false,
-  "workbench.layoutControl.enabled": false,
   "workbench.editor.editorActionsLocation": "hidden",
   "editor.suggest.showStatusBar": true,
   "workbench.statusBar.visible": false,
@@ -179,14 +175,12 @@
   },
   "C_Cpp.clang_format_style": "file",
   "C_Cpp.clang_format_fallbackStyle": "none",
-
   "window.customTitleBarVisibility": "windowed",
   "python.formatting.provider": "black",
   "github.copilot.selectedCompletionModel": "gpt-4o-copilot",
   "explorer.confirmPasteNative": false,
   "python.createEnvironment.trigger": "off",
   "workbench.editor.empty.hint": "hidden",
-  // "github.copilot.editor.enableAutoCompletions": false
   "emeraldwalk.runonsave": {
     "commands": [
       {
@@ -198,11 +192,24 @@
   "editor.codeLens": false,
   "github.copilot.nextEditSuggestions.enabled": true,
   "gitlens.views.fileHistory.mode": "contributors",
-  "[prisma]": {
-    "editor.defaultFormatter": "Prisma.prisma"
+  "[nginx]": {
+    "editor.defaultFormatter": "ahmadalli.vscode-nginx-conf"
   },
   "telemetry.telemetryLevel": "off",
   "update.mode": "manual",
   "extensions.autoUpdate": false,
-  "typescript.tsserver.maxTsServerMemory": 6144
+  "typescript.tsserver.maxTsServerMemory": 6144,
+  "remote.SSH.remotePlatform": {
+    "ho26j2.ftp.infomaniak.com": "linux"
+  },
+  "[shellscript]": {
+    "editor.defaultFormatter": "mads-hartmann.bash-ide-vscode"
+  },
+  "chat.showAgentSessionsViewDescription": false,
+  "workbench.activityBar.location": "hidden",
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
+  "cursor.cpp.disabledLanguages": ["scminput", "c", "cpp"],
+  "workbench.colorTheme": "Default Dark Modern",
+  "workbench.layoutControl.enabled": false,
+  "python.defaultInterpreterPath": "/bin/python"
 }
